@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\geometry{legalpaper, portrait, margin=1in}
+\title{Chemical Kinetics\\Experiment 15}
+\author{Dylan VanAllen}
+\date{Wednesday \\ 3/10/2021}
+\doublespacing
+\begin{document}
+    \begin{singlespace}
+    \maketitle
+    \end{singlespace}
+    \section*{Objective}
+    Reaction orders must be determined experimentally. A reaction between food dye and bleach will be done and the reaction orders 
+    with respect to the dye and the bleach will be found by comparing \(R^2\) values of plots assuming different orders. The rate constant \(k\) will also be determined.
+    By using excess bleach, the concentration of bleach will stay approximately constant, so the reaction order with respect to the dye can be found. 
+    \section*{Hypothesis}
+    Using the rate law of a bleaching reaction \((1)\), we will likely find the reaction to be first order with respect to the dye. This will be shown by comparing the \(R^2\) value of 
+    the plots of absorbance vs time, ln(absorbance) vs time, and 1/absorbance vs time plots. A first order reaction will follow an equation of the form \(y=mx+b\). 
+    After finding the rate law with respect to the dye, we will find the reaction order with respect to the dye to be first order by finding the ratio of psuedo k values. Then the k value 
+    can be solved for, and the predicted value is \(2 \pm 0.5\). 
+    \section*{Variables}
+    The independent variable is first time. The dependent variable is then absorbance, and we observe how it changes with respect to the dye initially. After that, we change the 
+    concentration of the bleach, and the dependent variable is then the absorbance over time of the bleach. 
+    \section*{Experimental Outline}
+    First, prepare \(150\) mL of \(0.1\) NaOh solution from the \(5.0\) M NaOh stock solution using graduated cylinders and an Erlenmeyer flask. Dilute the \(2.0 \times 10^-3\) M blue dye solution to make 
+    \(100\) mL of \(8.0 \times 10^-5\) M blue dye solution. Houshold bleach is \(0.705\) M. 
+    \par
+    A \(15\) mL solution of \(0.1\) NaOh, bleach, and blue dye is prepared for absorbance in each solution. Follow the following table. 
+    
+    \includegraphics[width=14cm]{absorbancetable.jpg}
+    \par
+    \noindent
+    Then, for each trial, graph absorbance vs time, ln(absorbance) vs time, and 1/absorbance vs time. Use a linear fit and determine the best \(R^2\) value of the three. Whichever is best will tell us the 
+    reaction order for dye. Then, calculate the value of \(n\) in equation \((1)\) by examining the ratio of \(\frac{k''}{k'}\). 
+    \section*{Chemical Hazards and Waste}
+    The solutions for this lab must be disposed of in the proper waste container. Clean up spills. Both bleach and dye will stain. The sodium hydoxide can cause burns to skin and eye damage.
+    \section*{Key Math Equations}
+    \begin{equation}
+        \text{Rate}=k[\text{dye}]^m[\text{bleach}]^n
+    \end{equation}
+    \begin{equation}
+        A = \varepsilon b C
+    \end{equation}
+    \section*{Data}
+    The plot of ln(absorbance) vs time matches the best. This means that \(m=1\) in \((1)\).
+
+    \includegraphics{lbavt.jpg}
+    
+    \bigskip
+    \noindent
+    The data used to determine that \(n=1\) and \(k = 1.88 \pm 0.029\).
+
+    \includegraphics[width=14cm]{kdata.jpg}
+    \bigskip
+
+    \section*{Conclusion}
+    The graphs confirmed the hypothesis that the reaction order with respect to the dye was first order. The \(R^2\) values for each plot
+    are \(0.9128, 0.9998,\) and \(0.912\) respectively for a vs t, ln(a) vs t, and 1/a vs t. This means the equation follows \(y=mx+b\) and 
+    the reaction is first order. 
+    The value of N in our data confirmed that the reaction order with respect to the bleach was first order. We 
+    also determined a value of \(k = 1.88 \pm 0.029\). This also confirmed the hypothesis. The RSD was 15 which is relatively low, and means 
+    the data was decently accurate.
+\end{document}
