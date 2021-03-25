@@ -4,6 +4,7 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage[version=4]{mhchem}
 \geometry{legalpaper, portrait, margin=1in}
 \title{Chemical Equilibria\\Experiment 16}
 \author{Dylan VanAllen}
@@ -13,13 +14,35 @@
     \begin{singlespace}
     \maketitle
     \end{singlespace}
+    \section*{Title}
+    Chemical Equilibria: Is it possible to determine the predominate pathway that a reaction will follow?
     \section*{Objective}
+    In this experiment the reaction rate law is used in conjunction with a series of reactions to determine the pathway a reaction is following. If the determined rate constant for a specific reaction pathway varies highly in a series of the same reaction then it is likely that that is not the correct reaction pathway. Thus if a rate constant is determined multiple times for a series of the same reaction and has a low relative standard deviation, it is more likely tha the reaction is following that specific pathway. 
     \section*{Hypothesis}
+    A calibration curve will be created that correlates absorbance and concentration of Iron Thiocyanate that can be used to determine the concentration of an Iron Thiocyanate solution from its absorbance. With known volumes of \(\ce{Fe(NO3)3}\), the initial concentrations of \(\ce{Fe3+}\) and \(\ce{SCN-}\) can be found. With these concentrations the equilibrium concentrations are determined, and an equilibrium rate constant follows with a known reaction pathway. We will determine the equilibrium rate constant for a series of five solutions assuming the two different pathways \((1)\) and \((2)\), and the prediction is that \((1)\) will have a lower relative standard deviation and therefore more precisely describe the pathway. 
     \section*{Experimental Outline}
+    Prepare three solutions of Iron Thiocyanate with concentrations of \(5.00\times 10^-5\), \(1.00\times 10^-4\), \(1.50\times 10^-4\) M and use a spectrophotometer to measure the intensity and determine absorbance of each concentration. The create a calibration curve that can be used to determine a concentration of solution from a known absorbance. 
+    \par 
+    Prepare five solutions of \(\ce{Fe(NO3)3}\) and determine the concentrations using the results from the calibration curve. Each solution should have \(5.0\) mL \(\ce{Fe(NO3)3}\). Solution \(1\) will have \(1.0\) mL \(\ce{KSCN}\), solution \(2\) will have \(2.0\) mL \(\ce{KSCN}\), and so on. Determine the initial concentrations and then determine the equilibrium rate constant \(k_{eq}\) for each solution. Record which has a lower relative standard deviation. 
     \section*{Chemical Hazards and Waste}
+    Wear proper labwear to the lab. Iron (III) nitrate solution is toxic and is made with \(1\) M nitric acid which is corrosive and oxidizing. It can also cause burns and should not come into contact with organic solvents. Potassium thiocyanate is toxic. Discard of all waste in the proper container. 
     \section*{Key Math Equations}
+    \begin{align}
+        \ce{Fe^3+(aq)}+\ce{SCN-(aq) &<-> FeSCN^2+(aq)} \\
+        \ce{Fe^3+(aq)}+\ce{2SCN-(aq) &<-> Fe(SCN)2+(aq)} 
+    \end{align}
+    \begin{equation}
+        A = \varepsilon b c 
+    \end{equation}
+    \begin{align}
+        k_{eq_1} &= \frac{[\ce{FeSCN^2+}]}{[\ce{Fe^3+}][\ce{SCN-}]} \\
+        k_{eq_2} &= \frac{[\ce{Fe(SCN)2+}]}{[\ce{Fe^3+}][\ce{SCN-}]^2}
+    \end{align}
     \section*{Data}
-    \bigskip
-
+    \begin{figure}[h]
+        \centering
+        \includegraphics{images/cva.jpg}
+    \end{figure}
     \section*{Conclusion}
+    The calibration curve was found and has follows an equation of \(y=4962x+0.0025\), and has an \(R^2\) value of \(0.9997\) which shows that the data fits the curve well. The mean equilibrium rate constant for pathway \((1)\) was found to be \(138.19\) with a low RSD of \(93.21\) parts per thousand. The mean equilibrium rate constant for pathway \((2)\) was a wild \(5.0\times 10^5\) with a large RSD of \(804\). This shows us that pathway \((1)\) was the pathway that this reaction followed because the rate constant should not vary too much from one solution to the next. This supposrts the prediction that the reaction would follow the first pathway.
 \end{document}
